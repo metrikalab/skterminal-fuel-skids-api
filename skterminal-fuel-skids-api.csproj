@@ -27,11 +27,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Configurations\Databases\DatabaseTables\" />
       <Folder Include="Controllers\" />
-      <Folder Include="Data\ConstantData\" />
-      <Folder Include="Models\" />
       <Folder Include="Dtos\" />
+      <Folder Include="Migrations\" />
       <Folder Include="Validators\" />
       <Folder Include="Services\" />
     </ItemGroup>
