@@ -1,0 +1,13 @@
+﻿namespace skterminal_fuel_skids_api.Configurations.CustomHttpResponses
+{
+  public class NotFoundException : ApplicationException
+  {
+    public NotFoundException(string message) : base(message)
+    {
+    }
+
+    public NotFoundException(string name, object key) : base($"{name} with id ({key}) was not found")
+    {
+    }
+  }
+}
