@@ -12,7 +12,7 @@ using skterminal_fuel_skids_api.Configurations.Databases;
 namespace skterminal_fuel_skids_api.Migrations
 {
     [DbContext(typeof(DataContextEntityFramework))]
-    [Migration("20250929221317_1.0V_InitialMigration")]
+    [Migration("20250930183350_1.0V_InitialMigration")]
     partial class _10V_InitialMigration
     {
         /// <inheritdoc />
@@ -67,7 +67,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 25, DateTimeKind.Unspecified).AddTicks(7991), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 617, DateTimeKind.Unspecified).AddTicks(2587), new TimeSpan(0, 0, 0, 0, 0)),
                             Description = "Asfalto",
                             Enabled = true,
                             Name = "Asfalto",
@@ -76,7 +76,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("d078ae2f-73db-4ddc-b419-b2db4a900c73"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 25, DateTimeKind.Unspecified).AddTicks(8010), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 617, DateTimeKind.Unspecified).AddTicks(2604), new TimeSpan(0, 0, 0, 0, 0)),
                             Description = "Gasolio",
                             Enabled = true,
                             Name = "Gasolio",
@@ -315,6 +315,152 @@ namespace skterminal_fuel_skids_api.Migrations
                     b.HasIndex("TagId");
 
                     b.ToTable("SkidTags", "public");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("021270b0-8375-4db3-8623-503a1ca4c7e3"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("a7e7b6a7-7b3b-4f2b-9d12-2b8abdb70d01")
+                        },
+                        new
+                        {
+                            Id = new Guid("049b4e83-251b-493e-bf51-6c48c344994b"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("a7e7b6a7-7b3b-4f2b-9d12-2b8abdb70d01")
+                        },
+                        new
+                        {
+                            Id = new Guid("085ac574-5e14-4348-99fa-ad1537b5b755"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("b8a6c5f2-3c44-4c7e-8a3a-5a1f6f0d2a02")
+                        },
+                        new
+                        {
+                            Id = new Guid("1b9b0f36-34a5-4fe9-9302-6349d4dcc62d"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("b8a6c5f2-3c44-4c7e-8a3a-5a1f6f0d2a02")
+                        },
+                        new
+                        {
+                            Id = new Guid("1feb427a-24f4-41f9-b8cf-49f5dcad5c81"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("c9b7d6e3-4d55-4d8f-9b4b-6b2f7f1e3b03")
+                        },
+                        new
+                        {
+                            Id = new Guid("235d1975-34ef-404e-95ec-b57ec91dd7b4"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("c9b7d6e3-4d55-4d8f-9b4b-6b2f7f1e3b03")
+                        },
+                        new
+                        {
+                            Id = new Guid("246adb38-98aa-4a9f-964c-2dbc7c9d1231"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("da08e7f4-5e66-4e90-ac5c-7c30802f4c04")
+                        },
+                        new
+                        {
+                            Id = new Guid("2c6a19cf-afb0-4bc8-89a4-5f0e73d6a527"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("da08e7f4-5e66-4e90-ac5c-7c30802f4c04")
+                        },
+                        new
+                        {
+                            Id = new Guid("333c900d-2263-438e-ac4d-0197d431148a"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("eb19f805-6f77-4191-bd6d-8d4191405d05")
+                        },
+                        new
+                        {
+                            Id = new Guid("436dfd11-1661-4e97-a16b-a9f66acd9bae"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("eb19f805-6f77-4191-bd6d-8d4191405d05")
+                        },
+                        new
+                        {
+                            Id = new Guid("6c3df0fc-be06-45c9-ac96-85821ebafedd"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("fc2a0916-7088-4292-ce7e-9e52a2516e06")
+                        },
+                        new
+                        {
+                            Id = new Guid("7a2cfae2-306f-4f9c-87e5-f14d8284a91e"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("fc2a0916-7088-4292-ce7e-9e52a2516e06")
+                        },
+                        new
+                        {
+                            Id = new Guid("7f280166-f777-4442-ac8c-0b6444d7e3d6"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("0d3b1a27-8199-4393-df8f-af63b3627f07")
+                        },
+                        new
+                        {
+                            Id = new Guid("a0d267f9-93be-4d93-9891-fd32668dbfc3"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("0d3b1a27-8199-4393-df8f-af63b3627f07")
+                        },
+                        new
+                        {
+                            Id = new Guid("b062fc2b-a512-464b-9d21-1867528dace4"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("1e4c2b38-92aa-44a4-e090-b074c4738008")
+                        },
+                        new
+                        {
+                            Id = new Guid("ca472a60-124e-4d93-9c7d-06514cd49d98"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("1e4c2b38-92aa-44a4-e090-b074c4738008")
+                        },
+                        new
+                        {
+                            Id = new Guid("e753f211-1188-4ab3-a03b-375945130185"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"),
+                            TagId = new Guid("2f5d3c49-a3bb-45b5-f1a1-c185d5849109")
+                        },
+                        new
+                        {
+                            Id = new Guid("eeba331b-69ef-4188-b4f1-f9fc20509cd1"),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 8, 5, 18, 0, 19, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Enabled = true,
+                            SkidId = new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"),
+                            TagId = new Guid("2f5d3c49-a3bb-45b5-f1a1-c185d5849109")
+                        });
                 });
 
             modelBuilder.Entity("skterminal_fuel_skids_api.Models.Tag", b =>
@@ -369,7 +515,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("a7e7b6a7-7b3b-4f2b-9d12-2b8abdb70d01"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7326), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2484), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Valores Generales",
                             Display = 0,
                             Enabled = true,
@@ -381,7 +527,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("b8a6c5f2-3c44-4c7e-8a3a-5a1f6f0d2a02"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7339), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2488), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 1,
                             Enabled = true,
@@ -393,7 +539,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("c9b7d6e3-4d55-4d8f-9b4b-6b2f7f1e3b03"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7342), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2492), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 1,
                             Enabled = true,
@@ -405,7 +551,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("da08e7f4-5e66-4e90-ac5c-7c30802f4c04"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7345), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2495), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Valores Generales",
                             Enabled = true,
                             FloatingPrecision = 2.0,
@@ -416,7 +562,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("eb19f805-6f77-4191-bd6d-8d4191405d05"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7349), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2499), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
@@ -428,7 +574,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("fc2a0916-7088-4292-ce7e-9e52a2516e06"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7352), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2502), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
@@ -440,7 +586,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("0d3b1a27-8199-4393-df8f-af63b3627f07"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7355), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2505), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Valores Generales",
                             Display = 0,
                             Enabled = true,
@@ -452,7 +598,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("1e4c2b38-92aa-44a4-e090-b074c4738008"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7359), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2513), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
@@ -464,7 +610,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("2f5d3c49-a3bb-45b5-f1a1-c185d5849109"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 29, 22, 13, 16, 26, DateTimeKind.Unspecified).AddTicks(7362), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2516), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
