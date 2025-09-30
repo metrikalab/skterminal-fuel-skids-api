@@ -249,8 +249,8 @@ namespace skterminal_fuel_skids_api.Migrations
                 columns: new[] { "Id", "CreationDate", "Description", "Enabled", "ModificationDate", "Name", "TagValue" },
                 values: new object[,]
                 {
-                    { new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 617, DateTimeKind.Unspecified).AddTicks(2587), new TimeSpan(0, 0, 0, 0, 0)), "Asfalto", true, null, "Asfalto", 1 },
-                    { new Guid("d078ae2f-73db-4ddc-b419-b2db4a900c73"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 617, DateTimeKind.Unspecified).AddTicks(2604), new TimeSpan(0, 0, 0, 0, 0)), "Gasolio", true, null, "Gasolio", 2 }
+                    { new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 502, DateTimeKind.Unspecified).AddTicks(9705), new TimeSpan(0, 0, 0, 0, 0)), "Asfalto", true, null, "Asfalto", 1 },
+                    { new Guid("d078ae2f-73db-4ddc-b419-b2db4a900c73"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 502, DateTimeKind.Unspecified).AddTicks(9726), new TimeSpan(0, 0, 0, 0, 0)), "Gasolio", true, null, "Gasolio", 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -259,15 +259,15 @@ namespace skterminal_fuel_skids_api.Migrations
                 columns: new[] { "Id", "CreationDate", "DataType", "Description", "Display", "Enabled", "FloatingPrecision", "MeasurementUnit", "Order", "TagName" },
                 values: new object[,]
                 {
-                    { new Guid("0d3b1a27-8199-4393-df8f-af63b3627f07"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2505), new TimeSpan(0, 0, 0, 0, 0)), "Valores Generales", null, 0, true, 2.0, "°C", 7, "TEMP_DENS" },
-                    { new Guid("1e4c2b38-92aa-44a4-e090-b074c4738008"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2513), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "°C", 8, "TEMP_TREN1" },
-                    { new Guid("2f5d3c49-a3bb-45b5-f1a1-c185d5849109"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2516), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "°C", 9, "TEMP_TREN2" },
-                    { new Guid("a7e7b6a7-7b3b-4f2b-9d12-2b8abdb70d01"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2484), new TimeSpan(0, 0, 0, 0, 0)), "Valores Generales", null, 0, true, 2.0, "Kg/m³", 1, "DENSIDAD" },
-                    { new Guid("b8a6c5f2-3c44-4c7e-8a3a-5a1f6f0d2a02"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2488), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 1, true, 2.0, "L/m", 2, "FLUJO_TREN1" },
-                    { new Guid("c9b7d6e3-4d55-4d8f-9b4b-6b2f7f1e3b03"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2492), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 1, true, 2.0, "L/m", 3, "FLUJO_TREN2" },
-                    { new Guid("da08e7f4-5e66-4e90-ac5c-7c30802f4c04"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2495), new TimeSpan(0, 0, 0, 0, 0)), "Valores Generales", null, null, true, 2.0, "Kg/cm²", 4, "PRESION_DENS" },
-                    { new Guid("eb19f805-6f77-4191-bd6d-8d4191405d05"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2499), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "Kg/cm²", 5, "PRESION_TREN1" },
-                    { new Guid("fc2a0916-7088-4292-ce7e-9e52a2516e06"), new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2502), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "Kg/cm²", 6, "PRESION_TREN2" }
+                    { new Guid("0d3b1a27-8199-4393-df8f-af63b3627f07"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(26), new TimeSpan(0, 0, 0, 0, 0)), "Valores Generales", null, 0, true, 2.0, "°C", 7, "TEMP_DENS" },
+                    { new Guid("1e4c2b38-92aa-44a4-e090-b074c4738008"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(34), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "°C", 8, "TEMP_TREN1" },
+                    { new Guid("2f5d3c49-a3bb-45b5-f1a1-c185d5849109"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(37), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "°C", 9, "TEMP_TREN2" },
+                    { new Guid("a7e7b6a7-7b3b-4f2b-9d12-2b8abdb70d01"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(3), new TimeSpan(0, 0, 0, 0, 0)), "Valores Generales", null, 0, true, 2.0, "Kg/m³", 1, "DENSIDAD" },
+                    { new Guid("b8a6c5f2-3c44-4c7e-8a3a-5a1f6f0d2a02"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(8), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 1, true, 2.0, "L/m", 2, "FLUJO_TREN1" },
+                    { new Guid("c9b7d6e3-4d55-4d8f-9b4b-6b2f7f1e3b03"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(11), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 1, true, 2.0, "L/m", 3, "FLUJO_TREN2" },
+                    { new Guid("da08e7f4-5e66-4e90-ac5c-7c30802f4c04"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(15), new TimeSpan(0, 0, 0, 0, 0)), "Valores Generales", null, 0, true, 2.0, "Kg/cm²", 4, "PRESION_DENS" },
+                    { new Guid("eb19f805-6f77-4191-bd6d-8d4191405d05"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(19), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "Kg/cm²", 5, "PRESION_TREN1" },
+                    { new Guid("fc2a0916-7088-4292-ce7e-9e52a2516e06"), new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(22), new TimeSpan(0, 0, 0, 0, 0)), "Parámetro de operación", null, 0, true, 2.0, "Kg/cm²", 6, "PRESION_TREN2" }
                 });
 
             migrationBuilder.InsertData(
@@ -276,8 +276,8 @@ namespace skterminal_fuel_skids_api.Migrations
                 columns: new[] { "Id", "CreationDate", "Description", "Enabled", "Hub", "Order", "ProductId", "Tag" },
                 values: new object[,]
                 {
-                    { new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"), new DateTimeOffset(new DateTime(2025, 7, 21, 19, 45, 10, 924, DateTimeKind.Unspecified).AddTicks(4890), new TimeSpan(0, 0, 0, 0, 0)), "Patín de Entrega", true, "", null, new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"), "PS" },
-                    { new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"), new DateTimeOffset(new DateTime(2025, 6, 30, 6, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), "Patín de Recepción", true, "", null, new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"), "PE" }
+                    { new Guid("32368847-78ab-4bf7-ab01-5ae54f957340"), new DateTimeOffset(new DateTime(2025, 7, 21, 19, 45, 10, 924, DateTimeKind.Unspecified).AddTicks(4890), new TimeSpan(0, 0, 0, 0, 0)), "Patín de Entrega", true, "", 1, new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"), "PS" },
+                    { new Guid("3e18ebd2-b998-4e52-96ff-e2d7975ead73"), new DateTimeOffset(new DateTime(2025, 6, 30, 6, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), "Patín de Recepción", true, "", 2, new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"), "PE" }
                 });
 
             migrationBuilder.InsertData(

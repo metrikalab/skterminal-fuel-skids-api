@@ -4,6 +4,9 @@ using skterminal_fuel_skids_api.Configurations.Controllers;
 using skterminal_fuel_skids_api.Configurations.CustomHttpResponses;
 using skterminal_fuel_skids_api.Configurations.Databases;
 using skterminal_fuel_skids_api.Repositories.GenericContract;
+using skterminal_fuel_skids_api.Repositories.SkidContract;
+using skterminal_fuel_skids_api.Services.SkidServices;
+using skterminal_fuel_skids_api.Validators.SkidValidators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -84,6 +87,10 @@ builder.Services.AddSwaggerGen(c =>
 #endregion
 
 builder.Services.AddHttpClient();
+
+builder.Services.AddScoped<ISkidRepository, SkidRepository>();
+builder.Services.AddScoped<ISkidValidator, SkidValidator>();
+builder.Services.AddScoped<ISkidService, SkidService>();
 
 #region Allows to Inject as dependency
 #region Generic

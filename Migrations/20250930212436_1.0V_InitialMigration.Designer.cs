@@ -12,7 +12,7 @@ using skterminal_fuel_skids_api.Configurations.Databases;
 namespace skterminal_fuel_skids_api.Migrations
 {
     [DbContext(typeof(DataContextEntityFramework))]
-    [Migration("20250930183350_1.0V_InitialMigration")]
+    [Migration("20250930212436_1.0V_InitialMigration")]
     partial class _10V_InitialMigration
     {
         /// <inheritdoc />
@@ -67,7 +67,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 617, DateTimeKind.Unspecified).AddTicks(2587), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 502, DateTimeKind.Unspecified).AddTicks(9705), new TimeSpan(0, 0, 0, 0, 0)),
                             Description = "Asfalto",
                             Enabled = true,
                             Name = "Asfalto",
@@ -76,7 +76,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("d078ae2f-73db-4ddc-b419-b2db4a900c73"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 617, DateTimeKind.Unspecified).AddTicks(2604), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 502, DateTimeKind.Unspecified).AddTicks(9726), new TimeSpan(0, 0, 0, 0, 0)),
                             Description = "Gasolio",
                             Enabled = true,
                             Name = "Gasolio",
@@ -135,6 +135,7 @@ namespace skterminal_fuel_skids_api.Migrations
                             Description = "Patín de Entrega",
                             Enabled = true,
                             Hub = "",
+                            Order = 1,
                             ProductId = new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"),
                             Tag = "PS"
                         },
@@ -145,6 +146,7 @@ namespace skterminal_fuel_skids_api.Migrations
                             Description = "Patín de Recepción",
                             Enabled = true,
                             Hub = "",
+                            Order = 2,
                             ProductId = new Guid("7e1fce1f-f758-404c-9ab2-cda5f5115529"),
                             Tag = "PE"
                         });
@@ -515,7 +517,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("a7e7b6a7-7b3b-4f2b-9d12-2b8abdb70d01"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2484), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(3), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Valores Generales",
                             Display = 0,
                             Enabled = true,
@@ -527,7 +529,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("b8a6c5f2-3c44-4c7e-8a3a-5a1f6f0d2a02"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2488), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(8), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 1,
                             Enabled = true,
@@ -539,7 +541,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("c9b7d6e3-4d55-4d8f-9b4b-6b2f7f1e3b03"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2492), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(11), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 1,
                             Enabled = true,
@@ -551,8 +553,9 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("da08e7f4-5e66-4e90-ac5c-7c30802f4c04"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2495), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(15), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Valores Generales",
+                            Display = 0,
                             Enabled = true,
                             FloatingPrecision = 2.0,
                             MeasurementUnit = "Kg/cm²",
@@ -562,7 +565,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("eb19f805-6f77-4191-bd6d-8d4191405d05"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2499), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(19), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
@@ -574,7 +577,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("fc2a0916-7088-4292-ce7e-9e52a2516e06"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2502), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(22), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
@@ -586,7 +589,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("0d3b1a27-8199-4393-df8f-af63b3627f07"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2505), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(26), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Valores Generales",
                             Display = 0,
                             Enabled = true,
@@ -598,7 +601,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("1e4c2b38-92aa-44a4-e090-b074c4738008"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2513), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(34), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
@@ -610,7 +613,7 @@ namespace skterminal_fuel_skids_api.Migrations
                         new
                         {
                             Id = new Guid("2f5d3c49-a3bb-45b5-f1a1-c185d5849109"),
-                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 18, 33, 49, 618, DateTimeKind.Unspecified).AddTicks(2516), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreationDate = new DateTimeOffset(new DateTime(2025, 9, 30, 21, 24, 35, 504, DateTimeKind.Unspecified).AddTicks(37), new TimeSpan(0, 0, 0, 0, 0)),
                             DataType = "Parámetro de operación",
                             Display = 0,
                             Enabled = true,
