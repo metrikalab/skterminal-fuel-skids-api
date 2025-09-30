@@ -21,13 +21,9 @@ namespace skterminal_fuel_skids_api.Services.SkidServices
 
     public async Task<IEnumerable<GetSkidDetailDto>> GetSkidDetailsAsync()
     {
-      // Traer skids con sus tags
       var skids = await _skidRepository.GetAllSkidsWithTagsAsync();
-
-      // Validar resultado
       _skidValidator.IsSkidWithDetailsListValid(skids);
 
-      // Proyectar a DTO
       var result = skids.Select(s =>
       {
         var dto = new GetSkidDetailDto
@@ -41,15 +37,16 @@ namespace skterminal_fuel_skids_api.Services.SkidServices
           CreationDate = s.CreationDate
         };
 
-        var skidTags = s.SkidTagsList?
+        var tags = s.SkidTagsList?
           .Where(st => st?.Tags != null)
-          .OrderBy(st => st!.Tags.Order);
+          .Select(st => st!.Tags!)
+          .OrderBy(t => t.Order ?? int.MaxValue)
+          .ToList();
 
-        if (skidTags != null)
+        if (tags != null)
         {
-          foreach (var st in skidTags)
+          foreach (var t in tags)
           {
-            var t = st!.Tags!;
             var tagDto = new GetTagDetailDto
             {
               Id = t.Id,
@@ -64,11 +61,14 @@ namespace skterminal_fuel_skids_api.Services.SkidServices
               CreationDate = t.CreationDate
             };
 
-            var key = t.TagName; // usa t.Id.ToString() si quieres evitar colisiones por nombre
-            if (t.Display == 1)
+            var key = t.TagName; 
+
+            if (t.DataType == "Valores Generales")
+              dto.ValoresGeneralesTagList[key] = tagDto;
+            else if (t.DataType == "Parámetro de operación")
               dto.OperationTagList[key] = tagDto;
             else
-              dto.ParameterTagList[key] = tagDto;
+              dto.OperationTagList[key] = tagDto;
           }
         }
 
