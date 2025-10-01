@@ -11,7 +11,7 @@ namespace skterminal_fuel_skids_api.Configurations.Mapper
     {
    
       CreateMap<Skid, GetSkidDetailDto>()
-        .ForMember(d => d.ValoresGeneralesTagList, opt => opt.Ignore())
+        .ForMember(d => d.GeneralValuesTagList, opt => opt.Ignore())
         .ForMember(d => d.OperationTagList, opt => opt.Ignore());
 
       CreateMap<Tag, GetTagDetailDto>();

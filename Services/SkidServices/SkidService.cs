@@ -64,7 +64,7 @@ namespace skterminal_fuel_skids_api.Services.SkidServices
             var key = t.TagName; 
 
             if (t.DataType == "Valores Generales")
-              dto.ValoresGeneralesTagList[key] = tagDto;
+              dto.GeneralValuesTagList[key] = tagDto;
             else if (t.DataType == "Parámetro de operación")
               dto.OperationTagList[key] = tagDto;
             else

@@ -31,7 +31,7 @@ namespace skterminal_fuel_skids_api.Dtos.SkidDtos
    
     [JsonPropertyName("valoresGeneralesTagList")]
     [JsonPropertyOrder(1)]
-      public Dictionary<string, GetTagDetailDto> ValoresGeneralesTagList { get; set; } = new();
+      public Dictionary<string, GetTagDetailDto> GeneralValuesTagList { get; set; } = new();
 
     
     [JsonPropertyName("operationTagList")]
