@@ -79,7 +79,7 @@ namespace skterminal_fuel_skids_api.Configurations.Databases.DatabaseTables
           DataType = "Valores Generales",
           FloatingPrecision = 2,
           MeasurementUnit = "Kg/cm²",
-          Display = null,
+          Display = 0,
           Order = 4,
           Enabled = true,
           CreationDate = DateTimeOffset.UtcNow
@@ -144,7 +144,7 @@ namespace skterminal_fuel_skids_api.Configurations.Databases.DatabaseTables
           Enabled = true,
           CreationDate = DateTimeOffset.UtcNow
         }
-            );
+      );
     }
   }
 }

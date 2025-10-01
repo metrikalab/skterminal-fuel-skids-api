@@ -40,7 +40,8 @@ namespace skterminal_fuel_skids_api.Configurations.Databases.DatabaseTables
           Description = "Patín de Entrega",
           CreationDate = DateTimeOffset.Parse("2025-07-21 19:45:10.924489+00"),
           Enabled = true,
-          ProductId = Guid.Parse(DefaultProductsIds.ASFALTO)
+          ProductId = Guid.Parse(DefaultProductsIds.ASFALTO),
+          Order = 1
         },
         new Skid
         {
@@ -50,7 +51,8 @@ namespace skterminal_fuel_skids_api.Configurations.Databases.DatabaseTables
           Description = "Patín de Recepción",
           CreationDate = DateTimeOffset.Parse("2025-06-30 06:00:00+00"),
           Enabled = true,
-          ProductId = Guid.Parse(DefaultProductsIds.ASFALTO)
+          ProductId = Guid.Parse(DefaultProductsIds.ASFALTO),
+          Order = 2
         }
       );
     }
